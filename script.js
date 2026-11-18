@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     openPortalBtn.addEventListener('click', () => {
         portalModal.style.display = 'flex';
     });
-
     // Close Modal
     closePortalBtn.addEventListener('click', () => {
         portalModal.style.display = 'none';
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = `Assalamu Alaikum, I would like to inquire about admission:\n\n*Student Name:* ${student}\n*Class:* ${classLevel}\n*Parent Phone:* ${phone}\n\n_(Sent via School Website Demo by Hefz|tech)_`;
 
         const whatsappNumber = "2349027192335";
-        const whatsappUrl = `https://wa.me{whatsappNumber}?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappUrl, '_blank');
     });
