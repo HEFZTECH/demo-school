@@ -1,0 +1,480 @@
+/* ==========================================================================
+   AL-HIKMAH MODEL ACADEMY - SCHOOL DEMO STYLESHEET (HEFZ|TECH)
+   ========================================================================== */
+
+:root {
+    --navy: #0f172a;
+    --navy-light: #1e293b;
+    --emerald: #059669;
+    --emerald-dark: #047857;
+    --gold: #d97706;
+    --bg-light: #f8fafc;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --border: #e2e8f0;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Top Agency Banner */
+.agency-banner {
+    background-color: #09090b;
+    color: #f4f4f5;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 2px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.agency-banner span strong {
+    color: var(--gold);
+    letter-spacing: 0.5px;
+}
+
+.agency-btn {
+    background-color: var(--gold);
+    color: #09090b;
+    padding: 6px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.agency-btn:hover {
+    background-color: #f59e0b;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.school-crest {
+    width: 44px;
+    height: 44px;
+    background-color: var(--navy);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: 2px solid var(--gold);
+}
+
+.school-name h1 {
+    font-size: 1.15rem;
+    color: var(--navy);
+    line-height: 1.2;
+}
+
+.school-name p {
+    font-size: 0.78rem;
+    color: var(--emerald);
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--emerald);
+}
+
+.nav-cta {
+    background-color: var(--emerald);
+    color: var(--white) !important;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: var(--white);
+    padding: 80px 5% 100px;
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(5, 150, 105, 0.2);
+    border: 1px solid var(--emerald);
+    color: #34d399;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    max-width: 800px;
+    margin: 0 auto 18px;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 32px;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: var(--emerald);
+    color: var(--white);
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--emerald-dark);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 28px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+/* Stats Section */
+.stats-container {
+    max-width: 1100px;
+    margin: -50px auto 60px;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: var(--white);
+    padding: 28px 22px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid var(--emerald);
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Sections */
+section {
+    padding: 60px 5%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header span {
+    color: var(--emerald);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--navy);
+    margin-top: 6px;
+}
+
+/* Academic Programs */
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+}
+
+.program-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    padding: 32px 26px;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-color: var(--emerald);
+}
+
+.program-tag {
+    display: inline-block;
+    background-color: #ecfdf5;
+    color: var(--emerald);
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+}
+
+.program-card h3 {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.program-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Admission Form */
+.admission-box {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 45px 6%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.admission-info h3 {
+    font-size: 1.7rem;
+    color: var(--navy);
+    margin-bottom: 14px;
+}
+
+.admission-info p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.admission-list {
+    list-style: none;
+}
+
+.admission-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.admission-list li::before {
+    content: "✓ ";
+    color: var(--emerald);
+    font-weight: 800;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--navy);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--emerald);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--navy);
+    color: var(--white);
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--emerald);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.75);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 32px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--navy);
+    color: #cbd5e1;
+    padding: 50px 5% 25px;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    max-width: 1150px;
+    margin: 0 auto 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.footer-grid h4 {
+    color: var(--white);
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+}
+
+.footer-grid p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .agency-banner {
+        justify-content: center;
+        text-align: center;
+    }
+}

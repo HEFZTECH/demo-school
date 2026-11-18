@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Hikmah Model Academy, Kano | Live Demo by Hefz|tech</title>
+    <link rel="stylesheet" href="steyle.css">
+</head>
+<body>
+
+    <div class="agency-banner">
+        <span><strong>LIVE DEMO BY HEFZ|TECH:</strong> Want a custom website like this for your school?</span>
+        <a href="https://hefztech.com.ng" class="agency-btn" target="_blank">Build Yours Now &rarr;</a>
+    </div>
+
+    <header>
+        <div class="school-brand">
+            <div class="school-crest">AH</div>
+            <div class="school-name">
+                <h1 id="schoolTitle">Al-Hikmah Model Academy</h1>
+                <p>Kabuga / Janbulo Axis, Kano State</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#programs">Academics</a></li>
+                <li><a href="#admission">Admissions</a></li>
+                <li><a href="#contact">Location</a></li>
+                <li><a href="#admission" class="nav-cta">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-badge">2026/2027 Academic Session Admissions Open</div>
+        <h2>Nurturing Academic Excellence, Innovation &amp; Moral Integrity</h2>
+        <p>Providing a disciplined, modern, and technology-driven learning environment for future leaders in Kano State and beyond.</p>
+        <div class="hero-buttons">
+            <a href="#admission" class="btn-primary">Apply for Admission</a>
+            <button class="btn-secondary" id="openPortalBtn">Student / Parent Portal</button>
+        </div>
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <h3>100%</h3>
+            <p>WAEC &amp; NECO Pass Rate</p>
+        </div>
+        <div class="stat-card">
+            <h3>35+</h3>
+            <p>Qualified &amp; Certified Teachers</p>
+        </div>
+        <div class="stat-card">
+            <h3>Modern</h3>
+            <p>ICT &amp; Science Laboratories</p>
+        </div>
+        <div class="stat-card">
+            <h3>Safe</h3>
+            <p>Serene &amp; Disciplined Campus</p>
+        </div>
+    </div>
+
+    <section id="programs">
+        <div class="section-header">
+            <span>Our Curriculum</span>
+            <h2>Academic Sections</h2>
+        </div>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-tag">Early Years &amp; Basic</div>
+                <h3>Nursery &amp; Primary</h3>
+                <p>Strong foundational literacy, numeracy, Islamic &amp; moral upbringing, and interactive learning tailored for young minds.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-tag">JSS 1 – JSS 3</div>
+                <h3>Junior Secondary</h3>
+                <p>Comprehensive basic science, mathematics, digital literacy, and civic education preparing students for BECE excellence.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-tag">SSS 1 – SSS 3</div>
+                <h3>Senior Secondary</h3>
+                <p>Specialized Science, Commercial, and Arts tracks with intensive practical labs and WAEC, NECO, and JAMB preparation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admission">
+        <div class="admission-box">
+            <div class="admission-info">
+                <h3>Start Your Child's Admission Process Online</h3>
+                <p>Parents can easily register interest online. Fill out the quick inquiry form and our Admissions Officer will respond immediately.</p>
+                <ul class="admission-list">
+                    <li>Entrance Examination &amp; Placement Assessment</li>
+                    <li>Affordable Termly Tuition Structure</li>
+                    <li>Dedicated Islamiyya &amp; Tahfiz Integration</li>
+                    <li>School Bus &amp; Safe Pick-up Services</li>
+                </ul>
+            </div>
+            <form id="admissionForm">
+                <div class="form-group">
+                    <label for="studentName">Student's Full Name</label>
+                    <input type="text" id="studentName" placeholder="e.g. Amina Abubakar" required>
+                </div>
+                <div class="form-group">
+                    <label for="classLevel">Class Applying For</label>
+                    <select id="classLevel" required>
+                        <option value="">-- Select Class --</option>
+                        <option value="Nursery Section">Nursery Section</option>
+                        <option value="Primary 1 - 6">Primary 1 – 6</option>
+                        <option value="JSS 1 - JSS 3">Junior Secondary (JSS 1 – 3)</option>
+                        <option value="SSS 1 - SSS 3">Senior Secondary (SSS 1 – 3)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="parentPhone">Parent / Guardian Phone Number</label>
+                    <input type="tel" id="parentPhone" placeholder="e.g. 0803 123 4567" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Inquiry via WhatsApp &rarr;</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal" id="portalModal">
+        <div class="modal-content">
+            <h3>Student &amp; Parent Portal</h3>
+            <p>In the full version built by <strong>Hefz|tech</strong>, parents can log in here to check termly results, download report cards, and verify school fees.</p>
+            <button class="submit-btn" id="closePortalBtn">Close Preview</button>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div>
+                <h4>Al-Hikmah Model Academy</h4>
+                <p>Committed to raising disciplined, knowledgeable, and morally upright students in Kano State.</p>
+            </div>
+            <div>
+                <h4>Campus Location</h4>
+                <p>Plot 14, Kabuga / Janbulo Axis, Kano, Nigeria</p>
+                <p>Mon – Fri: 7:30 AM – 3:30 PM</p>
+            </div>
+            <div>
+                <h4>Admissions Desk</h4>
+                <p>Phone: +234 800 000 0000</p>
+                <p>Email: admissions@school-demo.com.ng</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Al-Hikmah Model Academy. All Rights Reserved.</span>
+            <span>Engineered by <a href="https://hefztech.com.ng" target="_blank">Hefz|tech</a></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
